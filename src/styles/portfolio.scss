@@ -16,7 +16,12 @@ $border-radius: 5px;
 
 $btn-border-radius: 30px;
 
-header {
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+@import "/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "/node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "/node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+.header {
   background: #151515 url("../img/intro-bg.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
