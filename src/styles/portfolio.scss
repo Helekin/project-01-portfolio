@@ -21,8 +21,8 @@ $btn-border-radius: 30px;
 @import "/node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 @import "/node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 
-.header {
-  background: #151515 url("../img/intro-bg.jpg") no-repeat center center;
+header {
+  background: #151515 url("../../public/img/intro-bg.png") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -35,4 +35,8 @@ $btn-border-radius: 30px;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
+}
+
+.header .text-container {
+  z-index: 10;
 }
