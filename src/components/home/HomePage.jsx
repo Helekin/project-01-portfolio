@@ -1,9 +1,30 @@
+import { useState, useEffect } from "react";
 import { Lora } from "next/font/google";
 import Image from "next/image";
 
 const lora = Lora({ subsets: ["latin"] });
 
 const HomePage = () => {
+  const [text, setText] = useState("");
+  const fullText = "I  am Carlos Acuña";
+  const interval = 100;
+
+  useEffect(() => {
+    let i = 0;
+    const typingInterval = setInterval(() => {
+      if (i < fullText.length) {
+        setText(prevText => prevText + fullText.charAt(i));
+        i++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, interval);
+
+    return () => {
+      clearInterval(typingInterval);
+    };
+  }, []);
+
   return (
     <div className="header-container">
       <Image src="/intro-bg.png" alt="intro bg" fill={true} />
@@ -13,6 +34,7 @@ const HomePage = () => {
         >
           Hello, World
         </h5>
+        <p>{text}</p>
         <p className="roles text-white text-uppercase fs-4">
           <span>Backend Developer | </span>
           <span>AWS Expert</span>
