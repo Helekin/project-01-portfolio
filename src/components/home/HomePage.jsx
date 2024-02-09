@@ -13,7 +13,7 @@ const HomePage = () => {
     let i = 0;
     const typingInterval = setInterval(() => {
       if (i < fullText.length) {
-        setText(prevText => prevText + fullText.charAt(i));
+        setText((prevText) => prevText + fullText.charAt(i));
         i++;
       } else {
         clearInterval(typingInterval);
@@ -23,7 +23,7 @@ const HomePage = () => {
     return () => {
       clearInterval(typingInterval);
     };
-  }, []);
+  }, [fullText]);
 
   return (
     <div className="header-container">
@@ -34,7 +34,7 @@ const HomePage = () => {
         >
           Hello, World
         </h5>
-        <p>{text}</p>
+        <p className="display-1 fw-bold text-white">{text}</p>
         <p className="roles text-white text-uppercase fs-4">
           <span>Backend Developer | </span>
           <span>AWS Expert</span>
