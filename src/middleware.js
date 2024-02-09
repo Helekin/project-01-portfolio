@@ -1,21 +1,33 @@
 import { NextResponse } from "next/server";
-import { NextRequest } from "next/server";
 import { match } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
 
 import i18n from "./i18n-config";
 
-let headers = { "accept-language": "es-LA, es; q=0.5" };
-let languages = new Negotiator({ headers }).languages();
-let locales = ["es-LA", "en-US", "en"];
-let defaultLocale = "es-LA";
-
-match(languages, locales, defaultLocale);
-
 function getLocale(request) {
-  const negotiatorHeaders = {};
+  const acceptedLanguage = request.headers.get("accept-language") || undefined;
+  let headers = { "accept-language": acceptedLanguage };
+  let languages = new Negotiator({ headers }).languages();
 
-  request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
-
-  const locales = i18n.locales;
+  return match(languages, i18n.locales, i18n.defaultLocale);
 }
+
+export function middleware(request) {
+  const pathname = request.nextUrl.pathname;
+
+  const pathnameIsMissingLocale = i18n.locales.every(
+    (locale) => !pathname.startsWith(`${locale}`) && pathname !== `${locale}`
+  );
+
+  if (pathnameIsMissingLocale) {
+    const locale = getLocale(request);
+
+    return NextResponse.redirect(
+      new URL(`/${locale}/${pathname}`, request.url)
+    );
+  }
+}
+
+export const config = {
+  matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
+};

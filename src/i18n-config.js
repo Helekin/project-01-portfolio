@@ -1,6 +1,6 @@
 const i18n = {
-  locales: ["default", "es", "en"],
-  defaultLocale: "default",
+  locales: ["es", "en"],
+  defaultLocale: "es",
   localeDetection: false,
   pages: {
     "*": ["common"],
