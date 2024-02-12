@@ -2,28 +2,36 @@ import { NextResponse } from "next/server";
 import { match } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
 
-import i18n from "./i18n-config";
+import i18n from "./i18n.config";
 
 function getLocale(request) {
-  const acceptedLanguage = request.headers.get("accept-language") || undefined;
-  let headers = { "accept-language": acceptedLanguage };
-  let languages = new Negotiator({ headers }).languages();
+  let negotiatorHeaders;
 
-  return match(languages, i18n.locales, i18n.defaultLocale);
+  request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
+
+  const locales = i18n.locales;
+  const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
+
+  const locale = match(languages, locales, i18n.defaultLocale);
+
+  return locale;
 }
 
 export function middleware(request) {
   const pathname = request.nextUrl.pathname;
 
   const pathnameIsMissingLocale = i18n.locales.every(
-    (locale) => !pathname.startsWith(`${locale}`) && pathname !== `${locale}`
+    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
 
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request);
 
     return NextResponse.redirect(
-      new URL(`/${locale}/${pathname}`, request.url)
+      new URL(
+        `/${locale}/${pathname.startsWith("/") ? "" : "/"}${pathname}`,
+        request.url
+      )
     );
   }
 }
