@@ -1,8 +1,9 @@
 {
   "Home": {
     "greeting": "Hola, mundo",
-    "name": "S oy Carlos Acuña",
+    "name": "Soy Carlos Acuña",
     "title1": "Desarrollador Backend",
-    "title2": "Experto en AWS"
+    "title2": "Experto en AWS",
+    "more": "Acerca de mí"
   }
 }

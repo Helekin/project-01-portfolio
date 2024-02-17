@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { NextIntlClientProvider } from "next-intl";
 
-import "@/styles/portfolio.scss";
 import "@/styles/globals.css";
+import "@/styles/portfolio.scss";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();

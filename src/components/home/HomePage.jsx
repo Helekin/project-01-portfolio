@@ -1,9 +1,11 @@
 import Presentation from "./Presentation";
 
 const HomePage = () => {
-  <>
-    <Presentation />
-  </>;
+  return (
+    <>
+      <Presentation />
+    </>
+  );
 };
 
 export default HomePage;
