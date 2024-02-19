@@ -1,9 +1,15 @@
 {
   "Home": {
-    "greeting": "Hola, mundo",
-    "name": "Soy Carlos Acuña",
-    "title1": "Desarrollador Backend",
-    "title2": "Experto en AWS",
-    "more": "Acerca de mí"
+    "text": {
+      "greeting": "Hola, mundo",
+      "name": "Soy Carlos Acuña",
+      "title1": "Desarrollador Backend",
+      "title2": "Experto en AWS",
+      "about": "Acerca de mí",
+      "intro": "Permíteme presentarme"
+    },
+    "button": {
+      "about": "Acerca de mí"
+    }
   }
 }
