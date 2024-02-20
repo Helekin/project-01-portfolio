@@ -1,8 +1,8 @@
 {
   "Home": {
     "text": {
-      "greeting": "Hola, mundo",
-      "name": "Soy Carlos Acuña",
+      "greeting": "¡Hola, mundo!",
+      "name": "Soy Carlos Acuña.",
       "title1": "Desarrollador Backend",
       "title2": "Experto en AWS",
       "about": "Acerca de mí",
@@ -10,6 +10,11 @@
     },
     "button": {
       "about": "Acerca de mí"
+    }
+  },
+  "LocaleSwitcher": {
+    "text": {
+      "switch": "Cambiar a {locale, select, es {ES} en {EN} other {Unknown}}"
     }
   }
 }

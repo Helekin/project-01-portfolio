@@ -2,6 +2,8 @@ import { useTranslations } from "next-intl";
 import { Lora } from "next/font/google";
 import Image from "next/image";
 
+import LocaleSwitcher from "../ui/LocaleSwitcher";
+
 const lora = Lora({ subsets: ["latin"] });
 
 const Presentation = () => {
@@ -9,15 +11,16 @@ const Presentation = () => {
 
   return (
     <div className="header">
-      <Image src="/intro-bg.png" alt="intro bg" fill={true} />
+      <Image src="/img/intro-bg.png" alt="intro" fill={true} />
+      <div className="language">
+        <LocaleSwitcher />
+      </div>
       <div className="title">
-        <h5
-          className={`${lora.className} text-primary fs-3 fw-bold text-uppercase`}
-        >
+        <h5 className="text-primary fs-3 fw-bold text-uppercase">
           {t("text.greeting")}
         </h5>
         <h1 className="display-1 fw-bold text-white">{t("text.name")}</h1>
-        <p className="text-white text-uppercase fs-4">
+        <p className={`${lora.className} text-white text-uppercase fs-4`}>
           <span>{t("text.title1")} | </span>
           <span>{t("text.title2")}</span>
         </p>
@@ -31,14 +34,14 @@ const Presentation = () => {
             </div>
           </div>
         </a>
-        <div className="social">
-          <a href="/" target="_blank">
-            <i className="fab fa-linkedin fa-3x text-white mx-3"></i>
-          </a>
-          <a href="/" target="_blank">
-            <i className="fab fa-github fa-3x text-white mx-3"></i>
-          </a>
-        </div>
+      </div>
+      <div className="social">
+        <a href="/" target="_blank">
+          <i className="fab fa-linkedin fa-3x text-white mx-3"></i>
+        </a>
+        <a href="/" target="_blank">
+          <i className="fab fa-github fa-3x text-white mx-3"></i>
+        </a>
       </div>
     </div>
   );

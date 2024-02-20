@@ -65,18 +65,31 @@ $container-max-widths: (
   background: rgba(0, 0, 0, 0.7);
 }
 
+.language {
+  position: relative;
+  text-align: center;
+  top: 10%;
+  right: 0;
+  transform: translate(-60%, 100%);
+  z-index: 1;
+}
+
 .title {
   position: relative;
   text-align: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -75%);
   z-index: 1;
 }
 
 .social {
-  bottom: 50px;
-  padding: 30px;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -125%);
+  z-index: 1;
 }
 
 .about {

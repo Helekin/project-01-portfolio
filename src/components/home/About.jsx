@@ -16,11 +16,11 @@ const About = () => {
         </div>
         <div className="about-content">
           <Image
-            src="/intro-bg.png"
-            alt="intro bg"
+            src="/img/profile.jpg"
+            alt="profile"
             className="about-img img-fluid rounded-circle"
-            width={500}
-            height={500}
+            width={200}
+            height={200}
           />
         </div>
       </div>
