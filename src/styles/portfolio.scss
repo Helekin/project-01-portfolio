@@ -67,10 +67,9 @@ $container-max-widths: (
 
 .language {
   position: relative;
-  text-align: center;
+  text-align: end;
   top: 10%;
-  right: 0;
-  transform: translate(-60%, 100%);
+  right: 5%;
   z-index: 1;
 }
 
@@ -86,9 +85,9 @@ $container-max-widths: (
 .social {
   position: relative;
   text-align: center;
-  top: 50%;
+  top: 25%;
   left: 50%;
-  transform: translate(-50%, -125%);
+  transform: translate(-50%, 0);
   z-index: 1;
 }
 

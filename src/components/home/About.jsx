@@ -14,14 +14,15 @@ const About = () => {
           <hr className="w-25 mx-auto" />
           <h2 className="mb-4">{t("text.intro")}</h2>
         </div>
-        <div className="about-content">
+        <div className="about-content d-flex gap-5 align-items-center h-100">
           <Image
             src="/img/profile.jpg"
             alt="profile"
-            className="about-img img-fluid rounded-circle"
+            className="img-fluid rounded-circle"
             width={200}
             height={200}
           />
+          <p className="lead">{t("text.bio")}</p>
         </div>
       </div>
     </div>

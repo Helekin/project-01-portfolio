@@ -1,15 +1,20 @@
 {
-  "Home": {
+  "Presentation": {
     "text": {
       "greeting": "¡Hola, mundo!",
       "name": "Soy Carlos Acuña.",
       "title1": "Desarrollador Backend",
-      "title2": "Experto en AWS",
-      "about": "Acerca de mí",
-      "intro": "Permíteme presentarme"
+      "title2": "Especialista en AWS"
     },
     "button": {
       "about": "Acerca de mí"
+    }
+  },
+  "About": {
+    "text": {
+      "about": "Acerca de mí",
+      "intro": "Permíteme presentarme",
+      "bio": "Apasionado por la programación, tengo una sólida experiencia en varios lenguajes de programación, incluyendo C#, JavaScript, PHP, Node.js, Java y C++. Además, estoy bien versado en tecnologías web como HTML, CSS y Bootstrap, lo que me permite crear interfaces de usuario atractivas y funcionales. Mi experiencia se extiende más allá del desarrollo front-end, abarcando tanto bases de datos relacionales como MySQL y SQL Server, como bases de datos no relacionales como MongoDB. Esta versatilidad me ha permitido abordar proyectos diversos y desafiantes, proporcionando soluciones eficientes y efectivas. Siempre estoy en busca de nuevos desafíos y oportunidades para aplicar mis habilidades técnicas y creativas. Si estás buscando a alguien que aporte experiencia y pasión al equipo, estaré encantado de conectar contigo."
     }
   },
   "LocaleSwitcher": {
