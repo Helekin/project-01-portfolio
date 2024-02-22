@@ -92,10 +92,19 @@ $container-max-widths: (
 }
 
 .about {
-  position: absolute;
+  // position: absolute;
   transform: translate(0, 100%);
   width: 100%;
   height: 100%;
+  z-index: 1;
+}
+
+.profile {
+  position: absolute;
+  transform: translate(0, 200%);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 @media (max-width: 767px) {

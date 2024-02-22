@@ -7,7 +7,7 @@ import LocaleSwitcher from "../ui/LocaleSwitcher";
 const lora = Lora({ subsets: ["latin"] });
 
 const Presentation = () => {
-  const t = useTranslations("Home");
+  const t = useTranslations("Presentation");
 
   return (
     <div className="header">
@@ -21,8 +21,8 @@ const Presentation = () => {
         </h5>
         <h1 className="display-1 fw-bold text-white">{t("text.name")}</h1>
         <p className={`${lora.className} text-white text-uppercase fs-4`}>
-          <span>{t("text.title1")} | </span>
-          <span>{t("text.title2")}</span>
+          <span>{t("text.title.0")} | </span>
+          <span>{t("text.title.1")}</span>
         </p>
         <a href="#about" className="btn btn-outline-light btn-lg mt-3">
           <div className="d-flex">

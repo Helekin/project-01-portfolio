@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const About = () => {
-  const t = useTranslations("Home");
+  const t = useTranslations("About");
 
   return (
     <div id="about" className="about bg-light py-5">
@@ -14,7 +14,7 @@ const About = () => {
           <hr className="w-25 mx-auto" />
           <h2 className="mb-4">{t("text.intro")}</h2>
         </div>
-        <div className="about-content d-flex gap-5 align-items-center h-100">
+        <div className="about-content d-flex gap-5 align-items-center">
           <Image
             src="/img/profile.jpg"
             alt="profile"

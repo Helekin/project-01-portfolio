@@ -3,8 +3,7 @@
     "text": {
       "greeting": "¡Hola, mundo!",
       "name": "Soy Carlos Acuña.",
-      "title1": "Desarrollador Backend",
-      "title2": "Especialista en AWS"
+      "title": ["Desarrollador Backend", "Especialista en AWS"]
     },
     "button": {
       "about": "Acerca de mí"
@@ -15,6 +14,41 @@
       "about": "Acerca de mí",
       "intro": "Permíteme presentarme",
       "bio": "Apasionado por la programación, tengo una sólida experiencia en varios lenguajes de programación, incluyendo C#, JavaScript, PHP, Node.js, Java y C++. Además, estoy bien versado en tecnologías web como HTML, CSS y Bootstrap, lo que me permite crear interfaces de usuario atractivas y funcionales. Mi experiencia se extiende más allá del desarrollo front-end, abarcando tanto bases de datos relacionales como MySQL y SQL Server, como bases de datos no relacionales como MongoDB. Esta versatilidad me ha permitido abordar proyectos diversos y desafiantes, proporcionando soluciones eficientes y efectivas. Siempre estoy en busca de nuevos desafíos y oportunidades para aplicar mis habilidades técnicas y creativas. Si estás buscando a alguien que aporte experiencia y pasión al equipo, estaré encantado de conectar contigo."
+    }
+  },
+  "Profile": {
+    "label": {
+      "title": "Perfil",
+      "name": "Nombre completo:",
+      "birth": "Fecha de nacimiento:",
+      "position": "Posición actual:",
+      "website": "Página web:",
+      "email": "Correo electrónico:"
+    },
+    "text": {
+      "description": "Aquí tienes más información sobre mí para ayudarte a conocerme mejor.",
+      "name": "Carlos José Acuña Aguaguiña",
+      "birth": "22 de Septiembre de 1994",
+      "position": "Desarrollador de software en ACR Digitals",
+      "website": "www.darkclownsoftware.com",
+      "email": "clsjs94@hotmail.com"
+    }
+  },
+  "Skills": {
+    "label": {
+      "title": "Habilidades"
+    },
+    "text": {
+      "description": "Durante mi trayectoria, he cultivado diversas habilidades que hoy en día me destacan. Estas competencias han sido fruto de años de experiencia y aprendizaje continuo.",
+      "skills": [
+        "JavaScript",
+        "NodeJS",
+        "React",
+        "HTML",
+        "CSS",
+        "PHP",
+        "Python"
+      ]
     }
   },
   "LocaleSwitcher": {
