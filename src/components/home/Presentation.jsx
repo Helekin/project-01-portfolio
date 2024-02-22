@@ -12,14 +12,14 @@ const Presentation = () => {
   return (
     <div className="header">
       <Image src="/img/intro-bg.png" alt="intro" fill={true} />
-      <div className="language">
+      {/* <div className="language">
         <LocaleSwitcher />
-      </div>
+      </div> */}
       <div className="title">
         <h5 className="text-primary fs-3 fw-bold text-uppercase">
           {t("text.greeting")}
         </h5>
-        <h1 className="display-1 fw-bold text-white">{t("text.name")}</h1>
+        <h1 className="display-2 fw-bold text-white">{t("text.name")}</h1>
         <p className={`${lora.className} text-white text-uppercase fs-4`}>
           <span>{t("text.title.0")} | </span>
           <span>{t("text.title.1")}</span>
@@ -35,14 +35,14 @@ const Presentation = () => {
           </div>
         </a>
       </div>
-      <div className="social">
+      {/* <div className="social">
         <a href="/" target="_blank">
           <i className="fab fa-linkedin fa-3x text-white mx-3"></i>
         </a>
         <a href="/" target="_blank">
           <i className="fab fa-github fa-3x text-white mx-3"></i>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };
