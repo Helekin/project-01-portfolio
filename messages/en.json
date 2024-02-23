@@ -1,4 +1,9 @@
 {
+  "LocaleSwitcher": {
+    "text": {
+      "switch": "Switch to {locale, select, es {ES} en {EN} other {Unknown}}"
+    }
+  },
   "Presentation": {
     "text": {
       "greeting": "Hello, world!",
@@ -43,38 +48,33 @@
       "skills": [
         {
           "id": 1,
-          "skill": "JavaScript"
+          "name": "JavaScript"
         },
         {
           "id": 2,
-          "skill": "NodeJS"
+          "name": "NodeJS"
         },
         {
           "id": 3,
-          "skill": "React"
+          "name": "React"
         },
         {
           "id": 4,
-          "skill": "HTML"
+          "name": "HTML"
         },
         {
           "id": 5,
-          "skill": "CSS"
+          "name": "CSS"
         },
         {
           "id": 6,
-          "skill": "PHP"
+          "name": "PHP"
         },
         {
           "id": 7,
-          "skill": "Python"
+          "name": "Python"
         }
       ]
-    }
-  },
-  "LocaleSwitcher": {
-    "text": {
-      "switch": "Switch to {locale, select, es {ES} en {EN} other {Unknown}}"
     }
   }
 }
