@@ -41,13 +41,34 @@
     "text": {
       "description": "Durante mi trayectoria, he cultivado diversas habilidades que hoy en día me destacan. Estas competencias han sido fruto de años de experiencia y aprendizaje continuo.",
       "skills": [
-        "JavaScript",
-        "NodeJS",
-        "React",
-        "HTML",
-        "CSS",
-        "PHP",
-        "Python"
+        {
+          "id": 1,
+          "skill": "JavaScript"
+        },
+        {
+          "id": 2,
+          "skill": "NodeJS"
+        },
+        {
+          "id": 3,
+          "skill": "React"
+        },
+        {
+          "id": 4,
+          "skill": "HTML"
+        },
+        {
+          "id": 5,
+          "skill": "CSS"
+        },
+        {
+          "id": 6,
+          "skill": "PHP"
+        },
+        {
+          "id": 7,
+          "skill": "Python"
+        }
       ]
     }
   },

@@ -41,13 +41,34 @@
     "text": {
       "description": "Throughout my journey, I've honed various skills that set me apart. These competencies have been the result of years of experience and continuous learning.",
       "skills": [
-        "JavaScript",
-        "NodeJS",
-        "React",
-        "HTML",
-        "CSS",
-        "PHP",
-        "Python"
+        {
+          "id": 1,
+          "skill": "JavaScript"
+        },
+        {
+          "id": 2,
+          "skill": "NodeJS"
+        },
+        {
+          "id": 3,
+          "skill": "React"
+        },
+        {
+          "id": 4,
+          "skill": "HTML"
+        },
+        {
+          "id": 5,
+          "skill": "CSS"
+        },
+        {
+          "id": 6,
+          "skill": "PHP"
+        },
+        {
+          "id": 7,
+          "skill": "Python"
+        }
       ]
     }
   },

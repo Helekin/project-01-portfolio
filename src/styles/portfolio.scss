@@ -58,21 +58,17 @@ $container-max-widths: (
 
 .header {
   position: relative;
-  width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.7);
 }
 
 .language {
-  position: relative;
-  text-align: end;
   top: 10%;
   right: 5%;
   z-index: 1;
 }
 
 .title {
-  position: absolute;
   text-align: center;
   top: 50%;
   left: 50%;
@@ -81,25 +77,20 @@ $container-max-widths: (
 }
 
 .social {
-  position: relative;
   text-align: center;
-  top: 25%;
+  bottom: 10%;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
   z-index: 1;
 }
 
 .about {
-  // position: absolute;
-  transform: translate(0, 100%);
   width: 100%;
   height: 100%;
   z-index: 1;
 }
 
 .profile {
-  position: absolute;
-  transform: translate(0, 200%);
   width: 100%;
   height: 100%;
   z-index: 1;

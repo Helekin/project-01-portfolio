@@ -7,15 +7,15 @@ const HomePage = () => {
   return (
     <>
       <Presentation />
-      {/* <About /> */}
-      {/* <div className="profile my-5">
+      <About />
+      <div className="profile my-5">
         <div className="container">
           <div className="row">
             <Profile />
             <Skills />
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };
