@@ -89,5 +89,41 @@
       "subtitle": "Check Out My Work",
       "description": "Where is a small sample of my projects"
     }
+  },
+  "Project": {
+    "label": {
+      "header": "Project information",
+      "title": "Title",
+      "category": "Category",
+      "client": "Client",
+      "date": "Release date",
+      "url": "Project URL"
+    },
+    "projects": [
+      {
+        "title": "Local's Atlas App",
+        "description": "The project involved the development of an innovative mobile application designed to provide recommendations for places and services worldwide. This application offers users an interactive and personalized platform to discover and explore a wide range of destinations, from restaurants and hotels to tourist attractions and local activities. The application utilizes geolocation technology and intelligent algorithms to provide accurate and relevant recommendations based on each user's preferences and search history. Users can explore different categories of places and services, view reviews and ratings from other users, and receive personalized suggestions based on their interests and current location.",
+        "category": "Mobile App",
+        "client": "Stern Marc Inc.",
+        "date": "2023",
+        "url": "https://localsatlas.com/"
+      },
+      {
+        "title": "Sonibel Website",
+        "description": "The project consisted of developing a comprehensive online sales system for a music store, offering an intuitive and secure platform for both customers and the store owner. The application includes two main interfaces: the sales portal aimed at customers to explore and purchase musical products, and an administrative portal designed for the store owner to manage inventory, orders, and other key aspects of the business.",
+        "category": "E-commerce",
+        "client": "Sonibel",
+        "date": "2023",
+        "url": "https://sonibelec.com/"
+      },
+      {
+        "title": "Continental School Website",
+        "description": "The project involved the design and development of the institutional website for a school, providing a comprehensive and functional digital platform for the educational community. The website provides detailed information about the school, its mission, vision, and values, as well as relevant information about staff, curriculum, and extracurricular activities.",
+        "category": "Landing Page",
+        "client": "Continental School",
+        "date": "2023",
+        "url": "https://continentaltiamarita.com/"
+      }
+    ]
   }
 }
