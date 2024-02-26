@@ -21,6 +21,12 @@
       "bio": "Passionate about programming, I have a strong background in various programming languages, including C#, JavaScript, PHP, Node.js, Java,and C++. Additionally, I am well-versed in web technologies such as HTML, CSS, and Bootstrap, enabling me to create attractive and functional user interfaces. My expertise extends beyond front-end      development, encompassing both relational databases like MySQL and      SQL Server, and non-relational databases like MongoDB. This     versatility has allowed me to tackle diverse and challenging      projects, providing efficient and effective solutions. I am always      on the lookout for new challenges and opportunities to apply my      technical and creative skills. If you are seeking someone who brings experience and passion to the team, I would be delighted to connect with you."
     }
   },
+  "Info": {
+    "button": {
+      "hire": "Hire me now",
+      "download": "Download CV"
+    }
+  },
   "Profile": {
     "label": {
       "title": "Profile",
@@ -75,6 +81,13 @@
           "name": "Python"
         }
       ]
+    }
+  },
+  "Portfolio": {
+    "label": {
+      "title": "Portfolio",
+      "subtitle": "Check Out My Work",
+      "description": "Where is a small sample of my projects"
     }
   }
 }

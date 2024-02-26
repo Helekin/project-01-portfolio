@@ -84,18 +84,6 @@ $container-max-widths: (
   z-index: 1;
 }
 
-.about {
-  width: 100%;
-  height: 100vh;
-  z-index: 1;
-}
-
-.profile {
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
 @media (max-width: 767px) {
   .social i {
     font-size: 30px;

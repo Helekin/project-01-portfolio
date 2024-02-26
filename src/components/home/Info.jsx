@@ -1,9 +1,13 @@
+import { useTranslations } from "next-intl";
+
 import Profile from "./Profile";
 import Skills from "./Skills";
 
 const Info = () => {
+  const t = useTranslations("Info");
+
   return (
-    <div className="profile my-5">
+    <div className="my-5">
       <div className="container">
         <div className="row">
           <Profile />
@@ -15,13 +19,13 @@ const Info = () => {
               href="#"
               className="btn btn-outline-dark btn-lg text-uppercase px-5 mx-3 my-2"
             >
-              Hire Me Now
+              {t("button.hire")}
             </a>
             <a
               href="#"
               className="btn btn-dark btn-lg text-uppercase px-5 mx-3 my-2"
             >
-              Download CV
+              {t("button.download")}
             </a>
           </div>
         </div>

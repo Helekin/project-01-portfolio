@@ -5,7 +5,7 @@ const About = () => {
   const t = useTranslations("About");
 
   return (
-    <div id="about" className="about bg-light py-5">
+    <div id="about" className="bg-light py-5">
       <div className="container">
         <div className="text-center">
           <h4 className="text-uppercase fw-bold text-primary">
