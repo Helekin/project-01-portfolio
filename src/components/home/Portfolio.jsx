@@ -16,7 +16,9 @@ const Portfolio = () => {
         </div>
         <div className="row">
           <div className="col-md-6 mb-4">
-            <div className="shadow-lg rounded-5"></div>
+            <div className="shadow-lg rounded-5">
+              
+            </div>
           </div>
         </div>
       </div>
