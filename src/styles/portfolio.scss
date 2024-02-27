@@ -84,6 +84,13 @@ $container-max-widths: (
   z-index: 1;
 }
 
+.project:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+  opacity: 0.8;
+}
+
 @media (max-width: 767px) {
   .social i {
     font-size: 30px;

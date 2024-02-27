@@ -1,7 +1,9 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const Portfolio = () => {
   const t = useTranslations("Portfolio");
+  const projects = t.raw("Job.projects");
 
   return (
     <div className="py-5 bg-light">
@@ -15,11 +17,25 @@ const Portfolio = () => {
           <p className="lead">{t("label.description")}</p>
         </div>
         <div className="row">
-          <div className="col-md-6 mb-4">
-            <div className="shadow-lg rounded-5">
-              
+          {projects.map((project) => (
+            <div key={project.id} className="col-md-6 mb-4">
+              <div className="project shadow-lg rounded-5">
+                <a
+                  onClick={() => {
+                    console.log("clicked");
+                  }}
+                >
+                  <Image
+                    src={project.img}
+                    className="img-fluid rounded-3"
+                    alt={project.title}
+                    width={1400}
+                    height={200}
+                  />
+                </a>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

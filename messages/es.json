@@ -88,42 +88,48 @@
       "title": "Portafolio",
       "subtitle": "Hecha un vistazo a mi trabajo",
       "description": "Dónde está una pequeña muestra de mis proyectos"
-    }
-  },
-  "Projects": {
-    "label": {
-      "header": "Project information",
-      "title": "Title",
-      "category": "Category",
-      "client": "Client",
-      "date": "Release date",
-      "url": "Project URL"
     },
-    "project": [
-      {
-        "title": "Local's Atlas App",
-        "description": "El proyecto consistió en el desarrollo de una aplicación móvil innovadora diseñada para ofrecer recomendaciones de lugares y servicios a nivel mundial. Esta aplicación proporciona a los usuarios una plataforma interactiva y personalizada para descubrir y explorar una amplia gama de destinos, desde restaurantes y hoteles hasta atracciones turísticas y actividades locales. La aplicación utiliza tecnología de geolocalización y algoritmos inteligentes para ofrecer recomendaciones precisas y relevantes basadas en las preferencias y el historial de búsqueda de cada usuario. Los usuarios pueden explorar diferentes categorías de lugares y servicios, ver reseñas y calificaciones de otros usuarios, y recibir sugerencias personalizadas según sus intereses y ubicación actual.",
-        "category": "Aplicación móvil",
-        "client": "Stern Marc Inc.",
-        "date": "2023",
-        "url": "https://localsatlas.com/"
+    "Job": {
+      "label": {
+        "header": "Información del projecto",
+        "title": "Título",
+        "category": "Categoría",
+        "client": "Cliente",
+        "date": "Fecha de lanzamiento",
+        "url": "URL del proyecto"
       },
-      {
-        "title": "Página Web - Sonibel",
-        "description": "El proyecto consistió en el desarrollo de un completo sistema de venta en línea para una tienda de música, ofreciendo una plataforma intuitiva y segura tanto para los clientes como para el propietario del local. La aplicación incluye dos interfaces principales: el portal de venta destinado a los clientes para explorar y adquirir productos musicales, y un portal administrativo diseñado para que el dueño del establecimiento gestione el inventario, los pedidos y otros aspectos clave del negocio.",
-        "category": "Aplicación comercial",
-        "client": "Sonibel",
-        "date": "2023",
-        "url": "https://sonibelec.com/"
-      },
-      {
-        "title": "Página Web - Continental School",
-        "description": "El proyecto abarcó el diseño y desarrollo de la página web institucional para una escuela, ofreciendo una plataforma digital completa y funcional para la comunidad educativa. La página web proporciona información detallada sobre la escuela, su misión, visión y valores, así como información relevante sobre el personal, el plan de estudios y las actividades extracurriculares.",
-        "category": "Página de aterrizaje",
-        "client": "Continental School",
-        "date": "2023",
-        "url": "https://continentaltiamarita.com/"
-      }
-    ]
+      "projects": [
+        {
+          "id": 1,
+          "title": "Local's Atlas - Aplicación",
+          "description": "El proyecto consistió en el desarrollo de una aplicación móvil innovadora diseñada para ofrecer recomendaciones de lugares y servicios a nivel mundial. Esta aplicación proporciona a los usuarios una plataforma interactiva y personalizada para descubrir y explorar una amplia gama de destinos, desde restaurantes y hoteles hasta atracciones turísticas y actividades locales. La aplicación utiliza tecnología de geolocalización y algoritmos inteligentes para ofrecer recomendaciones precisas y relevantes basadas en las preferencias y el historial de búsqueda de cada usuario. Los usuarios pueden explorar diferentes categorías de lugares y servicios, ver reseñas y calificaciones de otros usuarios, y recibir sugerencias personalizadas según sus intereses y ubicación actual.",
+          "category": "Aplicación móvil",
+          "client": "Stern Marc Inc.",
+          "date": "9 de abril del 2022",
+          "img": "/img/locals-atlas-app.png",
+          "url": "https://localsatlas.com/"
+        },
+        {
+          "id": 2,
+          "title": "Página Web - Sonibel",
+          "description": "El proyecto consistió en el desarrollo de un completo sistema de venta en línea para una tienda de música, ofreciendo una plataforma intuitiva y segura tanto para los clientes como para el propietario del local. La aplicación incluye dos interfaces principales: el portal de venta destinado a los clientes para explorar y adquirir productos musicales, y un portal administrativo diseñado para que el dueño del establecimiento gestione el inventario, los pedidos y otros aspectos clave del negocio.",
+          "category": "Aplicación comercial",
+          "client": "Sonibel",
+          "date": "30 de junio del 2023",
+          "img": "/img/sonibel-website.png",
+          "url": "https://sonibelec.com/"
+        },
+        {
+          "id": 3,
+          "title": "Página Web - Continental School",
+          "description": "El proyecto abarcó el diseño y desarrollo de la página web institucional para una escuela, ofreciendo una plataforma digital completa y funcional para la comunidad educativa. La página web proporciona información detallada sobre la escuela, su misión, visión y valores, así como información relevante sobre el personal, el plan de estudios y las actividades extracurriculares.",
+          "category": "Página de aterrizaje",
+          "client": "Continental School",
+          "date": "13 de enero del 2024",
+          "img": "/img/continental-school-website.png",
+          "url": "https://continentaltiamarita.com/"
+        }
+      ]
+    }
   }
 }
