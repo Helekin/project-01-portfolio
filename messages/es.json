@@ -129,5 +129,49 @@
         }
       ]
     }
+  },
+  "Services": {
+    "label": {
+      "title": "Servicios",
+      "description": "Aquí tienes algunos de los servicios que ofrezco en el ámbito del desarrollo de software y seguridad informática"
+    },
+    "items": [
+      {
+        "id": 1,
+        "title": "Desarrollo de Sitios Web",
+        "description": "Creación de sitios web estáticos y dinámicos.",
+        "icon": "fas fa-globe"
+      },
+      {
+        "id": 2,
+        "title": "Desarrollo de Aplicaciones de Escritorio",
+        "description": "Creación de aplicaciones de escritorio para Windows, macOS y Linux.",
+        "icon": "fas fa-desktop"
+      },
+      {
+        "id": 3,
+        "title": "Integración de Sistemas y APIs",
+        "description": "Integración de sistemas y APIs de terceros para mejorar la funcionalidad de las aplicaciones.",
+        "icon": "fas fa-gear"
+      },
+      {
+        "id": 4,
+        "title": "Desarrollo de Aplicaciones Móviles",
+        "description": "Desarrollo de aplicaciones móviles utilizando tecnologías híbridas como React Native.",
+        "icon": "fas fa-mobile-screen"
+      },
+      {
+        "id": 5,
+        "title": "Implementación de Soluciones en la Nube",
+        "description": "Implementación de soluciones en la nube utilizando AWS para ofrecer servicios de hosting y almacenamiento seguro.",
+        "icon": "fas fa-cloud"
+      },
+      {
+        "id": 6,
+        "title": "Servicios de Consultoría y Asesoramiento Técnico",
+        "description": "Ofrecimiento de servicios de consultoría y asesoramiento técnico en proyectos de desarrollo de software.",
+        "icon": "fas fa-handshake-angle"
+      }
+    ]
   }
 }

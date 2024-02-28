@@ -129,5 +129,49 @@
         }
       ]
     }
+  },
+  "Services": {
+    "label": {
+      "title": "Services",
+      "description": "Here are some of the services I offer in the field of software development and cybersecurity"
+    },
+    "items": [
+      {
+        "id": 1,
+        "title": "Website Development",
+        "description": "Creation of static and dynamic websites.",
+        "icon": "fas fa-globe"
+      },
+      {
+        "id": 2,
+        "title": "Desktop Application Development",
+        "description": "Creation of desktop applications for Windows, macOS, and Linux.",
+        "icon": "fas fa-desktop"
+      },
+      {
+        "id": 3,
+        "title": "System and API Integration",
+        "description": "Integration of third-party systems and APIs to enhance application functionality.",
+        "icon": "fas fa-gear"
+      },
+      {
+        "id": 4,
+        "title": "Mobile Application Development",
+        "description": "Development of mobile applications using hybrid technologies like React Native.",
+        "icon": "fas fa-mobile-screen"
+      },
+      {
+        "id": 5,
+        "title": "Cloud Solutions Implementation",
+        "description": "Implementation of cloud solutions using AWS to offer hosting and secure storage services.",
+        "icon": "fas fa-cloud"
+      },
+      {
+        "id": 6,
+        "title": "Consulting and Technical Advisory Services",
+        "description": "Provision of consulting and technical advisory services for software development projects.",
+        "icon": "fas fa-handshake-angle"
+      }
+    ]
   }
 }
