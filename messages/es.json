@@ -91,8 +91,6 @@
     },
     "Job": {
       "label": {
-        "header": "Información del projecto",
-        "title": "Título",
         "category": "Categoría",
         "client": "Cliente",
         "date": "Fecha de lanzamiento",
@@ -102,7 +100,7 @@
         {
           "id": 1,
           "title": "Local's Atlas - Aplicación",
-          "description": "El proyecto consistió en el desarrollo de una aplicación móvil innovadora diseñada para ofrecer recomendaciones de lugares y servicios a nivel mundial. Esta aplicación proporciona a los usuarios una plataforma interactiva y personalizada para descubrir y explorar una amplia gama de destinos, desde restaurantes y hoteles hasta atracciones turísticas y actividades locales. La aplicación utiliza tecnología de geolocalización y algoritmos inteligentes para ofrecer recomendaciones precisas y relevantes basadas en las preferencias y el historial de búsqueda de cada usuario. Los usuarios pueden explorar diferentes categorías de lugares y servicios, ver reseñas y calificaciones de otros usuarios, y recibir sugerencias personalizadas según sus intereses y ubicación actual.",
+          "description": "El proyecto consistió en el desarrollo de una aplicación móvil innovadora diseñada para ofrecer recomendaciones de lugares y servicios a nivel mundial. Esta aplicación proporciona a los usuarios una plataforma interactiva y personalizada para descubrir y explorar una amplia gama de destinos, desde restaurantes y hoteles hasta atracciones turísticas y actividades locales.",
           "category": "Aplicación móvil",
           "client": "Stern Marc Inc.",
           "date": "9 de abril del 2022",

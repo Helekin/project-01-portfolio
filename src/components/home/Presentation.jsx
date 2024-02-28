@@ -12,10 +12,11 @@ const Presentation = () => {
   return (
     <div className="header">
       <Image src="/img/intro-bg.png" alt="intro" fill={true} />
-      <div className="language position-absolute">
-        <LocaleSwitcher />
-      </div>
+
       <div className="title position-absolute">
+        <div className="mb-2 text-end">
+          <LocaleSwitcher />
+        </div>
         <h5 className="text-primary fs-3 fw-bold text-uppercase">
           {t("text.greeting")}
         </h5>
@@ -34,14 +35,14 @@ const Presentation = () => {
             </div>
           </div>
         </a>
-      </div>
-      <div className="social position-absolute">
-        <a href="/" target="_blank">
-          <i className="fab fa-linkedin fa-3x text-white mx-3"></i>
-        </a>
-        <a href="/" target="_blank">
-          <i className="fab fa-github fa-3x text-white mx-3"></i>
-        </a>
+        <div className="social mt-4">
+          <a href="/" target="_blank">
+            <i className="fab fa-linkedin fa-3x text-white mx-3"></i>
+          </a>
+          <a href="/" target="_blank">
+            <i className="fab fa-github fa-3x text-white mx-3"></i>
+          </a>
+        </div>
       </div>
     </div>
   );

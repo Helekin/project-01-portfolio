@@ -76,14 +76,6 @@ $container-max-widths: (
   z-index: 1;
 }
 
-.social {
-  text-align: center;
-  bottom: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
 .project:hover {
   cursor: pointer;
   transform: scale(1.05);

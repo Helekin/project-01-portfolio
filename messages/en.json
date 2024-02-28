@@ -91,8 +91,6 @@
     },
     "Job": {
       "label": {
-        "header": "Project information",
-        "title": "Title",
         "category": "Category",
         "client": "Client",
         "date": "Release date",
@@ -102,7 +100,7 @@
         {
           "id": 1,
           "title": "Local's Atlas App",
-          "description": "The project involved the development of an innovative mobile application designed to provide recommendations for places and services worldwide. This application offers users an interactive and personalized platform to discover and explore a wide range of destinations, from restaurants and hotels to tourist attractions and local activities. The application utilizes geolocation technology and intelligent algorithms to provide accurate and relevant recommendations based on each user's preferences and search history. Users can explore different categories of places and services, view reviews and ratings from other users, and receive personalized suggestions based on their interests and current location.",
+          "description": "The project involved the development of an innovative mobile application designed to provide recommendations for places and services worldwide. This application offers users an interactive and personalized platform to discover and explore a wide range of destinations, from restaurants and hotels to tourist attractions and local activities.",
           "category": "Mobile App",
           "client": "Stern Marc Inc.",
           "date": "April 9, 2022",
