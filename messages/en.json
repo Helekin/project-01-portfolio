@@ -138,13 +138,13 @@
     "items": [
       {
         "id": 1,
-        "title": "Website Development",
+        "title": "Website",
         "description": "Creation of static and dynamic websites.",
         "icon": "fas fa-globe"
       },
       {
         "id": 2,
-        "title": "Desktop Application Development",
+        "title": "Desktop Application",
         "description": "Creation of desktop applications for Windows, macOS, and Linux.",
         "icon": "fas fa-desktop"
       },
@@ -156,22 +156,30 @@
       },
       {
         "id": 4,
-        "title": "Mobile Application Development",
+        "title": "Mobile Application",
         "description": "Development of mobile applications using hybrid technologies like React Native.",
         "icon": "fas fa-mobile-screen"
       },
       {
         "id": 5,
-        "title": "Cloud Solutions Implementation",
+        "title": "Cloud Solutions",
         "description": "Implementation of cloud solutions using AWS to offer hosting and secure storage services.",
         "icon": "fas fa-cloud"
       },
       {
         "id": 6,
-        "title": "Consulting and Technical Advisory Services",
+        "title": "Consulting",
         "description": "Provision of consulting and technical advisory services for software development projects.",
         "icon": "fas fa-handshake-angle"
       }
     ]
+  },
+  "Contact": {
+    "label": {
+      "title": "Contact",
+      "subtitle": "I'd love to hear from you.",
+      "description": "If you have any questions or would like to work together, please contact me with the form below."
+    },
+    "placeholder": {}
   }
 }

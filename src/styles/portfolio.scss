@@ -83,6 +83,14 @@ $container-max-widths: (
   opacity: 0.8;
 }
 
+input {
+  color: #ffffff !important;
+}
+
+input::placeholder {
+  color: #797979 !important;
+}
+
 @media (max-width: 767px) {
   .social i {
     font-size: 30px;
