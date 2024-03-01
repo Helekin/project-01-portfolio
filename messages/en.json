@@ -180,6 +180,16 @@
       "subtitle": "I'd love to hear from you.",
       "description": "If you have any questions or would like to work together, please contact me with the form below."
     },
-    "placeholder": {}
+    "placeholder": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message"
+    },
+    "button": {
+      "submit": "Submit"
+    },
+    "copyright": {
+      "text": "Copyright ©"
+    }
   }
 }

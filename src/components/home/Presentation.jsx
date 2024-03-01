@@ -36,10 +36,10 @@ const Presentation = () => {
           </div>
         </a>
         <div className="social mt-4">
-          <a href="/" target="_blank">
+          <a href="" target="_blank">
             <i className="fab fa-linkedin fa-3x text-white mx-3"></i>
           </a>
-          <a href="/" target="_blank">
+          <a href="https://github.com/Helekin" target="_blank">
             <i className="fab fa-github fa-3x text-white mx-3"></i>
           </a>
         </div>

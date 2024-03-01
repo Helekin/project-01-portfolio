@@ -83,11 +83,13 @@ $container-max-widths: (
   opacity: 0.8;
 }
 
-input {
+input,
+textarea {
   color: #ffffff !important;
 }
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #797979 !important;
 }
 

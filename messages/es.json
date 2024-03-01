@@ -173,5 +173,23 @@
         "icon": "fas fa-handshake-angle"
       }
     ]
+  },
+  "Contact": {
+    "label": {
+      "title": "Contacto",
+      "subtitle": "Me encantaría saber de ti.",
+      "description": "Si tienes alguna pregunta o te gustaría trabajar juntos, por favor contáctame utilizando el formulario a continuación."
+    },
+    "placeholder": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje"
+    },
+    "button": {
+      "submit": "Enviar"
+    },
+    "copyright": {
+      "text": "Copyright ©"
+    }
   }
 }
