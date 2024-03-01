@@ -53,7 +53,10 @@ const Contact = () => {
             {`${t("copyright.text")} ${new Date().getFullYear()}`}
           </p>
           <div className="hstack gap-3">
-            <a href="/" target="_blank">
+            <a
+              href="/https://www.linkedin.com/in/carlos-jose-acuna"
+              target="_blank"
+            >
               <i className="fab fa-linkedin fa-3x text-white mx-3"></i>
             </a>
             <a href="https://github.com/Helekin" target="_blank">

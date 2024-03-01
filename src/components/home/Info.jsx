@@ -22,7 +22,8 @@ const Info = () => {
               {t("button.hire")}
             </a>
             <a
-              href="#"
+              href="/pdf/CV-Carlos-Acuna.pdf"
+              download="CV-Carlos-Acuna"
               className="btn btn-dark btn-lg text-uppercase px-5 mx-3 my-2"
             >
               {t("button.download")}
