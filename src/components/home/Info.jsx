@@ -16,7 +16,7 @@ const Info = () => {
         <div className="row mt-5 text-center">
           <div className="col-12">
             <a
-              href="#"
+              href="#contact"
               className="btn btn-outline-dark btn-lg text-uppercase px-5 mx-3 my-2"
             >
               {t("button.hire")}
