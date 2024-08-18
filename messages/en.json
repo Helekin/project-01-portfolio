@@ -99,16 +99,6 @@
       "projects": [
         {
           "id": 1,
-          "title": "Local's Atlas App",
-          "description": "The project involved the development of an innovative mobile application designed to provide recommendations for places and services worldwide. This application offers users an interactive and personalized platform to discover and explore a wide range of destinations, from restaurants and hotels to tourist attractions and local activities.",
-          "category": "Mobile App",
-          "client": "Stern Marc Inc.",
-          "date": "April 9, 2022",
-          "img": "/img/locals-atlas-app.png",
-          "url": "https://localsatlas.com/"
-        },
-        {
-          "id": 2,
           "title": "Sonibel Website",
           "description": "The project consisted of developing a comprehensive online sales system for a music store, offering an intuitive and secure platform for both customers and the store owner. The application includes two main interfaces: the sales portal aimed at customers to explore and purchase musical products, and an administrative portal designed for the store owner to manage inventory, orders, and other key aspects of the business.",
           "category": "E-commerce",
@@ -118,7 +108,7 @@
           "url": "https://sonibelec.com/"
         },
         {
-          "id": 3,
+          "id": 2,
           "title": "Continental School Website",
           "description": "The project involved the design and development of the institutional website for a school, providing a comprehensive and functional digital platform for the educational community. The website provides detailed information about the school, its mission, vision, and values, as well as relevant information about staff, curriculum, and extracurricular activities.",
           "category": "Landing Page",
