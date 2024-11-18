@@ -11,7 +11,7 @@ const Navbar = () => {
   const { language, toggleLanguage } = useGlobalContext();
 
   return (
-    <nav className="bg-black-950 border-black-200 py-4">
+    <nav className="bg-black-950 border-black-200 py-4 sticky top-0 z-50">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
         <Link href="/" className="flex items-center">
           <span className="self-center text-xl font-semibold whitespace-nowrap text-black-50">
@@ -26,13 +26,13 @@ const Navbar = () => {
             href="/"
             className="text-black-50 bg-green-500 hover:bg-green-600 focus:right-4 focus:ring-green-500 focus:outline-none font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0"
           >
-            {language === "es" ? "Contact" : "Contacto"}
+            {language === "es" ? "Contacto" : "Contact"}
           </Link>
           <button
             onClick={toggleLanguage}
             className="text-black-50 ml-4 w-10 h-10 flex items-center justify-center rounded-full bg-green-500 hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:outline-none"
           >
-            {language.toUpperCase()}
+            {language === "es" ? "EN" : "ES"}
           </button>
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -83,19 +83,19 @@ const Navbar = () => {
               className="block py-2 pl-3 pr-4 text-black-50 hover:text-green-300 bg-green-500 rounded lg:bg-transparent lg:p-0"
               aria-current="page"
             >
-              {language === "es" ? "About me" : "Sobre mí"}
+              {language === "es" ? "Sobre mí" : "About me"}
             </Link>
             <Link
               href="/"
               className="block py-2 pl-3 pr-4 text-black-50 hover:text-green-300 lg:bg-transparent lg:p-0"
             >
-              {language === "es" ? "Prices & Services" : "Precios y Servicios"}
+              {language === "es" ? "Precios y Servicios" : "Prices & Services"}
             </Link>
             <Link
               href="/"
               className="block py-2 pl-3 pr-4 text-black-50 hover:text-green-300 lg:bg-transparent lg:p-0"
             >
-              {language === "es" ? "Projects" : "Proyectos"}
+              {language === "es" ? "Proyectos" : "Projects"}
             </Link>
           </ul>
         </div>
