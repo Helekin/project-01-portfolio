@@ -5,6 +5,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "selector",
   theme: {
     extend: {},
     colors: {
@@ -36,6 +37,16 @@ module.exports = {
         900: "#3d3d3d",
         950: "#000000",
       },
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1Opx",
+        md: "30px",
+      },
+    },
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
     },
   },
   plugins: [],

@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply dark:bg-black-950 dark:text-black-50 text-green-800 font-poppins tracking-wider overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative font-bold;
+  }
+
+  .nav-link::before {
+    @apply content-[""] absolute w-full h-[2px] bg-gradient-to-r from-green-200 to-green-800 -bottom-[5px] left-0 scale-x-0 transition-transform ease-in-out origin-right duration-500;
+  }
+
+  .nav-link:hover::before {
+    @apply scale-x-100 origin-left;
+  }
+
+  .btn {
+    @apply relative overflow-hidden bg-gradient-to-r from-green-800 to-green-200 px-7 py-3 rounded-full capitalize font-bold justify-center items-center;
+  }
+
+  .btn::before {
+    @apply content-[];
+  }
+}
