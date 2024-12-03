@@ -1,4 +1,4 @@
-import { Poppins, Londrina_Outline } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 
 import Navbar from "@/components/layout/Navbar";
 
@@ -14,7 +14,7 @@ export const metadata = {
     "Desarrollador Full Stack especializado en crear soluciones innovadoras. Aplicaciones web, móviles, software de escritorio y proyectos de robótica a tu medida. ¡Transforma tus ideas en realidad!",
 };
 
-const poppins = Poppins({
+const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <GlobalProvider>
       <html>
-        <body className={poppins.className}>
+        <body className={`${jetBrainsMono.className}`}>
           <Navbar />
           <main>{children}</main>
         </body>

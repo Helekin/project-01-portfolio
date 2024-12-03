@@ -1,78 +1,39 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
+
+import { FaRegMoon, FaRegSun } from "react-icons/fa";
+
+import WebNav from "./WebNav";
+import MobileNav from "./MobileNav";
+import Button from "../ui/Button";
 
 import { useGlobalContext } from "@/context/GlobalContext";
 
-import { IoClose, IoMenu } from "react-icons/io5";
-import { FaRegMoon, FaRegSun } from "react-icons/fa";
-
 const Navbar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const { language, toggleLanguage, darkMode, toggleDarkMode } =
-    useGlobalContext();
+  const { language, toggleLanguage } = useGlobalContext();
 
   return (
-    <div className="sticky top-0 z-50 duration-300">
-      <nav className="relative container flex justify-between items-center">
-        <div className="py-5">
-          <Link href="/" className="w-10">
-            <span>Carlos Acuña</span>
-          </Link>
+    <div className="py-8 xl:py-12 text-white">
+      <div className="container mx-auto flex justify-between items-center">
+        <Link href="/">
+          <h1 className="text-4xl font-semibold">
+            Carlos<span className="text-accent">.</span>
+          </h1>
+        </Link>
+        <div className="hidden xl:flex items-center gap-8">
+          <WebNav language={language} />
+          <Button
+            onClick={() => toggleLanguage()}
+            className="w-12 h-12 border-2 border-accent hover:bg-accent text-accent hover:text-white text-center rounded-full flex justify-center items-center font-bold hover:transition-all duration-500"
+          >
+            {language === "es-EC" ? "EN" : "ES"}
+          </Button>
         </div>
-        <div className="absolute top-0 left-0 bg-green-500 w-full py-24">
-          <ul className="flex flex-col items-center text-center gap-8">
-            <li>
-              <a href="#" className="nav-link">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-link">
-                Works
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-link">
-                Resume
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-link">
-                Skills
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-link">
-                Blog
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-link">
-                Contact
-              </a>
-            </li>
-            <li>
-              <button className="btn">
-                <span>hire me!</span>
-              </button>
-            </li>
-          </ul>
-          <div id="nav-close">
-            <IoClose />
-          </div>
-          <div>
-            <div onClick={() => toggleDarkMode()}>
-              {darkMode ? <FaRegMoon /> : <FaRegSun />}
-            </div>
-            <div id="hamburger">
-              <IoMenu />
-            </div>
-          </div>
+        <div className="xl:hidden">
+          <MobileNav language={language} toggleLanguage={toggleLanguage} />
         </div>
-      </nav>
+      </div>
     </div>
   );
 };
