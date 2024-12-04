@@ -2,8 +2,6 @@
 
 import Link from "next/link";
 
-import { FaRegMoon, FaRegSun } from "react-icons/fa";
-
 import WebNav from "./WebNav";
 import MobileNav from "./MobileNav";
 import Button from "../ui/Button";
@@ -22,7 +20,7 @@ const Navbar = () => {
           </h1>
         </Link>
         <div className="hidden xl:flex items-center gap-8">
-          <WebNav language={language} />
+          <WebNav />
           <Button
             onClick={() => toggleLanguage()}
             className="w-12 h-12 border-2 border-accent hover:bg-accent text-accent hover:text-white text-center rounded-full flex justify-center items-center font-bold hover:transition-all duration-500"

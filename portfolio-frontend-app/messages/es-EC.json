@@ -1,0 +1,34 @@
+{
+  "General": {
+    "noDataFound": "No se encontraron Datos"
+  },
+  "Navbar": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "resume": "Resumen",
+    "contact": "Contacto"
+  },
+  "Hero": {
+    "greetings": "¡Hola Mundo! Soy",
+    "downloadCV": "Descargar CV",
+    "stats": {
+      "years": {
+        "title": "Años de experiencias",
+        "value": "5"
+      },
+      "projects": {
+        "title": "Proyectos completados",
+        "value": "3"
+      },
+      "technologies": {
+        "title": "Tecnologías dominadas",
+        "value": "10"
+      },
+      "code": {
+        "title": "Confirmaciones de código",
+        "value": "500"
+      }
+    }
+  }
+}

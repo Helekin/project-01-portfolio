@@ -1,5 +1,7 @@
+import ServiceList from "@/components/sections/Services/ServiceList";
+
 const ServicesPage = () => {
-  return <div>ServicesPage</div>;
+  return <ServiceList />;
 };
 
 export default ServicesPage;

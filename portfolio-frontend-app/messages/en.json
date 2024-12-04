@@ -1,0 +1,34 @@
+{
+  "General": {
+    "noDataFound": "No Data Found"
+  },
+  "Navbar": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "resume": "Resume",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "greetings": "Hello World! I'm",
+    "downloadCV": "Download CV",
+    "stats": {
+      "years": {
+        "title": "Years of Experience",
+        "value": "5"
+      },
+      "projects": {
+        "title": "Projects completed",
+        "value": "3"
+      },
+      "technologies": {
+        "title": "Technologies mastered",
+        "value": "10"
+      },
+      "code": {
+        "title": "Code commits",
+        "value": "500"
+      }
+    }
+  }
+}

@@ -1,3 +1,5 @@
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
 import { JetBrains_Mono } from "next/font/google";
 
 import Navbar from "@/components/layout/Navbar";
@@ -19,13 +21,18 @@ const jetBrainsMono = JetBrains_Mono({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
 });
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
     <GlobalProvider>
-      <html>
+      <html lang={locale}>
         <body className={`${jetBrainsMono.className}`}>
-          <Navbar />
-          <main>{children}</main>
+          <NextIntlClientProvider messages={messages}>
+            <Navbar />
+            <main>{children}</main>
+          </NextIntlClientProvider>
         </body>
       </html>
     </GlobalProvider>

@@ -2,30 +2,21 @@
 
 import { createContext, useContext, useState } from "react";
 
+import { setUserLocale } from "@/services/locale";
+
 const GlobalContext = createContext();
 
 export function GlobalProvider({ children }) {
   const [language, setLanguage] = useState("es-EC");
-  const [darkMode, setDarkMode] = useState(false);
 
   const toggleLanguage = () => {
     setLanguage((prevLanguage) => (prevLanguage === "es-EC" ? "en" : "es-EC"));
-  };
-
-  const toggleDarkMode = () => {
-    if (document.documentElement.classList.contains("dark")) {
-      document.documentElement.classList.remove("dark");
-      setDarkMode(true);
-    } else {
-      document.documentElement.classList.add("dark");
-      setDarkMode(false);
-    }
+    const newLanguage = language === "es-EC" ? "en" : "es-EC";
+    setUserLocale(newLanguage);
   };
 
   return (
-    <GlobalContext.Provider
-      value={{ language, toggleLanguage, darkMode, toggleDarkMode }}
-    >
+    <GlobalContext.Provider value={{ language, toggleLanguage }}>
       {children}
     </GlobalContext.Provider>
   );
