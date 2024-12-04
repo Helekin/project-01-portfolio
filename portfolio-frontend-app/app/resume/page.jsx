@@ -1,5 +1,7 @@
+import ResumeSection from "@/components/sections/Resume/ResumeSection";
+
 const ResumePage = () => {
-  return <div>ResumePage</div>;
+  return <ResumeSection />;
 };
 
 export default ResumePage;

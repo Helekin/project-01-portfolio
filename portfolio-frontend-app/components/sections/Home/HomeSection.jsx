@@ -16,7 +16,7 @@ import Socials from "./Socials";
 import Avatar from "./Avatar";
 import Stats from "./Stats";
 
-const Hero = () => {
+const HomeSection = () => {
   const { language } = useGlobalContext();
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -81,4 +81,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HomeSection;

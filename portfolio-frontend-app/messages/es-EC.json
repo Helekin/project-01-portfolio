@@ -30,5 +30,11 @@
         "value": "500"
       }
     }
+  },
+  "Resume": {
+    "experience": "Experiencia",
+    "education": "Educación",
+    "skills": "Habilidades",
+    "aboutMe": "Acerca de mí"
   }
 }

@@ -1,7 +1,7 @@
-import ServiceList from "@/components/sections/Services/ServiceList";
+import ServiceSection from "@/components/sections/Services/ServiceSection";
 
 const ServicesPage = () => {
-  return <ServiceList />;
+  return <ServiceSection />;
 };
 
 export default ServicesPage;

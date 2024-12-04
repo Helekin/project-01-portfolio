@@ -7,8 +7,6 @@ import Link from "next/link";
 
 import { FaTimes, FaBars } from "react-icons/fa";
 
-import Button from "../ui/Button";
-
 const MobileNav = ({ language, toggleLanguage }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -73,7 +71,7 @@ const MobileNav = ({ language, toggleLanguage }) => {
               {t("contact")}
             </Link>
           </ul>
-          <Button
+          <button
             onClick={() => {
               toggleLanguage();
               setIsMobileMenuOpen(false);
@@ -81,7 +79,7 @@ const MobileNav = ({ language, toggleLanguage }) => {
             className="w-12 h-12 border-2 border-accent hover:bg-accent text-accent hover:text-white text-center rounded-full flex justify-center items-center mt-8 font-bold hover:transition-all duration-500"
           >
             {language === "es-EC" ? "EN" : "ES"}
-          </Button>
+          </button>
           <button
             onClick={() => setIsMobileMenuOpen(false)}
             className="absolute top-4 right-4 text-white text-3xl"

@@ -4,7 +4,6 @@ import Link from "next/link";
 
 import WebNav from "./WebNav";
 import MobileNav from "./MobileNav";
-import Button from "../ui/Button";
 
 import { useGlobalContext } from "@/context/GlobalContext";
 
@@ -21,12 +20,12 @@ const Navbar = () => {
         </Link>
         <div className="hidden xl:flex items-center gap-8">
           <WebNav />
-          <Button
+          <button
             onClick={() => toggleLanguage()}
             className="w-12 h-12 border-2 border-accent hover:bg-accent text-accent hover:text-white text-center rounded-full flex justify-center items-center font-bold hover:transition-all duration-500"
           >
             {language === "es-EC" ? "EN" : "ES"}
-          </Button>
+          </button>
         </div>
         <div className="xl:hidden">
           <MobileNav language={language} toggleLanguage={toggleLanguage} />
